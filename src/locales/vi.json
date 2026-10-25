@@ -1,0 +1,329 @@
+{
+  "app": {
+    "name": "PC Manager Pro",
+    "tagline": "Trình quản lý & tối ưu máy tính toàn diện"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "system": "Thông tin hệ thống",
+    "cpu": "CPU",
+    "ram": "RAM",
+    "mainboard": "Mainboard",
+    "disk": "Ổ đĩa",
+    "gpu": "GPU",
+    "network": "Mạng",
+    "software": "Phần mềm",
+    "startup": "Khởi động",
+    "driver": "Driver",
+    "dashboard": "Tổng quan",
+    "performance": "Hiệu năng",
+    "optimizer": "Tối ưu",
+    "cleaner": "Dọn rác",
+    "booster": "Tăng tốc",
+    "repair": "Sửa lỗi",
+    "security": "Bảo mật",
+    "tools": "Tiện ích",
+    "windowsConfig": "Thiết lập",
+    "settings": "Cài đặt"
+  },
+  "common": {
+    "loading": "Đang tải…",
+    "error": "Lỗi",
+    "retry": "Thử lại",
+    "cancel": "Hủy",
+    "confirm": "Xác nhận",
+    "save": "Lưu",
+    "close": "Đóng",
+    "search": "Tìm kiếm",
+    "refresh": "Làm mới",
+    "yes": "Có",
+    "no": "Không"
+  },
+  "settings": {
+    "tab": {
+      "general": "Chung",
+      "startup": "Khởi động",
+      "notification": "Thông báo",
+      "security": "Bảo mật",
+      "monitor": "Giám sát",
+      "about": "Giới thiệu"
+    },
+    "subtitle": "Tùy chỉnh giao diện, khởi động, thông báo và bảo mật của PC Manager Pro.",
+    "unsavedHint": "Có thay đổi chưa lưu",
+    "reset": "Khôi phục mặc định",
+    "save": "Lưu thay đổi",
+    "saved": "Đã lưu",
+    "confirmReset": "Khôi phục tất cả cài đặt về mặc định?",
+    "general": {
+      "appearance": "Giao diện",
+      "theme": "Theme",
+      "themeDesc": "Hiện tại app chỉ hỗ trợ Dark. Light/System sẽ thêm ở bản sau.",
+      "language": "Ngôn ngữ",
+      "languageDesc": "Áp dụng ngay, không cần khởi động lại.",
+      "fontSize": "Cỡ chữ",
+      "fontSizeDesc": "px — áp dụng toàn app."
+    },
+    "startup": {
+      "title": "Khởi động cùng Windows",
+      "subtitle": "Một số tùy chọn cần restart app để có hiệu lực.",
+      "autoLaunch": "Tự khởi động khi đăng nhập",
+      "autoLaunchDesc": "PC Manager Pro sẽ chạy nền khi Windows boot vào user.",
+      "minimizeToTray": "Thu nhỏ vào system tray",
+      "minimizeToTrayDesc": "Khi tắt cửa sổ chính, app ẩn xuống tray thay vì thoát hẳn.",
+      "checkUpdate": "Tự động kiểm tra cập nhật",
+      "checkUpdateDesc": "Mỗi ngày kiểm tra 1 lần qua GitHub Releases."
+    },
+    "notification": {
+      "title": "Thông báo",
+      "subtitle": "Cảnh báo khi quét xong, update, hoặc phát hiện bất thường.",
+      "enabled": "Bật thông báo hệ thống",
+      "enabledDesc": "Hiển thị toast Windows khi có sự kiện.",
+      "sound": "Phát âm thanh",
+      "soundDesc": "Cần bật thông báo hệ thống ở trên để có hiệu lực."
+    },
+    "security": {
+      "title": "Bảo mật",
+      "subtitle": "Các tùy chọn giới hạn quyền khi chạy app.",
+      "requireAdmin": "Yêu cầu quyền admin",
+      "requireAdminDesc": "Một số chức năng (SFC, DISM, xóa file hệ thống) cần admin. App sẽ nhắc nếu thiếu.",
+      "pinLock": "Khóa app bằng PIN",
+      "pinLockDesc": "Yêu cầu nhập PIN 6 số khi mở app. Tính năng sẽ có ở bản 0.2."
+    },
+    "elevation": {
+      "title": "Quyền Administrator",
+      "subtitle": "Tự nâng quyền khi mở app để mọi chức năng hệ thống hoạt động đầy đủ.",
+      "runningAsAdmin": "Đang chạy với quyền Admin",
+      "runningAsUser": "Đang chạy với quyền User",
+      "devMode": "Dev mode — tự nâng quyền tạm bị tắt",
+      "autoElevate": "Tự nâng quyền khi mở app",
+      "autoElevateDesc": "Khi bật, app sẽ tự khởi động lại với quyền Administrator và hiện hộp thoại UAC.",
+      "restartNow": "Khởi động lại với quyền Admin",
+      "restartNowDesc": "Khởi động lại app ngay với quyền Administrator (hiện hộp thoại UAC).",
+      "restart": "Nâng quyền"
+    },
+    "monitor": {
+      "title": "Realtime monitor",
+      "subtitle": "Tần suất cập nhật CPU/RAM/Net và thời gian lưu lịch sử.",
+      "refreshInterval": "Tần suất làm mới",
+      "refreshIntervalDesc": "1s mượt nhất nhưng tốn CPU hơn; 5s tiết kiệm pin.",
+      "historyRetention": "Lưu lịch sử",
+      "historyRetentionDesc": "Sau khoảng này, chart sẽ bắt đầu ghi đè dữ liệu cũ."
+    },
+    "about": {
+      "title": "Giới thiệu",
+      "subtitle": "PC Manager Pro",
+      "description": "Trình quản lý & tối ưu Windows toàn diện, chạy cục bộ không cần cài đặt.",
+      "stack": "Stack:",
+      "viewOnGithub": "Xem trên GitHub",
+      "copyDiagnostics": "Sao chép thông tin chẩn đoán",
+      "license": "MIT License."
+    },
+    "update": {
+      "title": "Cập nhật",
+      "subtitle": "Tự động nâng cấp qua GitHub Releases",
+      "check": "Kiểm tra cập nhật",
+      "checking": "Đang kiểm tra…",
+      "upToDate": "Bạn đang dùng bản mới nhất",
+      "available": "Có bản {{version}}",
+      "currentVersion": "Phiên bản hiện tại",
+      "latestVersion": "Phiên bản mới",
+      "releasedAt": "Phát hành",
+      "releaseNotes": "Ghi chú phát hành",
+      "noNotes": "Không có ghi chú cho bản này.",
+      "download": "Tải và cài đặt",
+      "downloading": "Đang tải xuống…",
+      "installing": "Đang cài đặt…",
+      "finished": "Cập nhật xong. App sẽ tự khởi động lại.",
+      "failed": "Cập nhật thất bại. Vui lòng thử lại sau.",
+      "channel": "Kênh cập nhật",
+      "channelGithub": "GitHub Releases",
+      "autoCheck": "Tự kiểm tra mỗi ngày"
+    },
+    "errorBoundary": {
+      "reload": "Tải lại trang",
+      "home": "Về Dashboard",
+      "copy": "Sao chép chi tiết",
+      "copied": "Đã sao chép!"
+    }
+  },
+  "security": {
+    "tab": {
+      "scan": "Quét virus",
+      "threats": "Mối đe dọa",
+      "settings": "Cài đặt Defender",
+      "exclusions": "Loại trừ",
+      "firewall": "Firewall"
+    },
+    "status": {
+      "protected": "Đang được bảo vệ",
+      "unavailable": "Không khả dụng",
+      "atRisk": "Có rủi ro",
+      "threats": "Có mối đe dọa"
+    },
+    "pill": {
+      "realtime": "Realtime",
+      "cloud": "Cloud",
+      "behavior": "Behavior"
+    },
+    "scan": {
+      "title": "Quét virus",
+      "quick": "Quét nhanh",
+      "quickDesc": "Quét các vùng thường nhiễm (1-5 phút)",
+      "full": "Quét toàn bộ",
+      "fullDesc": "Quét tất cả ổ đĩa (vài giờ)",
+      "custom": "Quét tùy chọn",
+      "customDesc": "Chọn folder/path cụ thể",
+      "customPrompt": "Nhập đường dẫn folder cần quét (vd: C:\\Users):",
+      "lastResult": "Kết quả quét gần nhất",
+      "type": "Loại quét",
+      "completed": "Hoàn tất",
+      "failed": "Thất bại",
+      "running": "Đang chạy",
+      "duration": "Thời lượng",
+      "stillRunning": "đang chạy...",
+      "noThreats": "Không phát hiện mối đe dọa",
+      "foundThreats": "Phát hiện {{count}} mối đe dọa",
+      "signature": "Chữ ký bảo mật",
+      "signatureDesc": "Cập nhật chữ ký để Defender nhận diện malware mới nhất",
+      "updateNow": "Cập nhật ngay",
+      "lastUpdate": "Cập nhật",
+      "quickAge": "Quick scan",
+      "fullAge": "Full scan",
+      "threats": "Threats"
+    },
+    "threats": {
+      "title": "Mối đe dọa hiện tại",
+      "empty": "Không có mối đe dọa nào",
+      "count": "{{count}} mối đe dọa",
+      "allClean": "Máy tính của bạn an toàn",
+      "allCleanDesc": "Defender không phát hiện mối đe dọa nào đang hoạt động",
+      "quarantined": "Đã cách ly",
+      "quarantine": "Cách ly",
+      "restore": "Khôi phục",
+      "remove": "Xóa"
+    },
+    "settings": {
+      "protection": "Bảo vệ thời gian thực",
+      "protectionDesc": "Các tính năng chính của Defender",
+      "realtime": "Realtime Protection",
+      "realtimeDesc": "Giám sát file/process đang chạy — khi TẮT, malware có thể chạy tự do",
+      "behavior": "Behavior Monitoring",
+      "behaviorDesc": "Phát hiện hành vi bất thường của process (vd: ransomware)",
+      "scriptScan": "Script Scanning",
+      "scriptScanDesc": "Quét PowerShell/VBScript macro khi chạy",
+      "archiveScan": "Archive Scanning",
+      "archiveScanDesc": "Quét bên trong file nén .zip/.rar/.7z",
+      "cloud": "Cloud Protection",
+      "cloudDesc": "Gửi metadata lên Microsoft để phân tích nhanh hơn",
+      "cloudLevel": "Mức bảo vệ Cloud",
+      "cloudLevelDesc": "High = block ngay khi nghi ngờ; Basic = cảnh báo trước",
+      "applying": "Đang áp dụng..."
+    },
+    "exclusions": {
+      "title": "Danh sách loại trừ",
+      "subtitle": "File/process trong danh sách này sẽ KHÔNG bị Defender quét. Chỉ thêm khi chắc chắn an toàn.",
+      "type": "Loại",
+      "value": "Giá trị",
+      "add": "Thêm",
+      "empty": "Chưa có exclusion nào"
+    },
+    "firewall": {
+      "title": "Windows Firewall",
+      "subtitle": "Quản lý 3 profile: Domain (công ty), Private (nhà), Public (quán cafe)",
+      "on": "Đang bật",
+      "off": "Đang tắt",
+      "turnOn": "Bật",
+      "turnOff": "Tắt",
+      "note": "Khuyến nghị",
+      "noteDesc": "Giữ firewall BẬT cho cả 3 profile. Tắt chỉ khi debug network và tạm thời."
+    }
+  },
+  "driver": {
+    "tab": {
+      "overview": "Tổng quan",
+      "list": "Danh sách",
+      "backup": "Sao lưu",
+      "library": "Thư viện"
+    },
+    "health": {
+      "good": "Tất cả ổn định",
+      "hasIssues": "Có driver cần chú ý",
+      "manyOld": "Nhiều driver cũ"
+    },
+    "header": {
+      "total": "Tổng",
+      "unsigned": "Chưa ký",
+      "old": "Cũ > 2 năm"
+    },
+    "overview": {
+      "issues": "Vấn đề phát hiện",
+      "distribution": "Phân bố theo loại",
+      "distributionDesc": "Tổng số driver theo DeviceClass",
+      "newest": "Driver mới nhất",
+      "newestDesc": "5 driver có date gần đây nhất"
+    },
+    "issue": {
+      "unsigned": "{{count}} driver chưa được ký số",
+      "old": "{{count}} driver đã cũ (>2 năm)",
+      "update": "{{count}} driver có bản cập nhật",
+      "none": "Không phát hiện vấn đề"
+    },
+    "list": {
+      "searchPlaceholder": "Tìm theo tên, class, provider…",
+      "allClasses": "Tất cả loại",
+      "unsignedOnly": "Chỉ chưa ký",
+      "empty": "Không tìm thấy driver nào",
+      "showing": "Hiển thị {{shown}}/{{total}}"
+    },
+    "backup": {
+      "title": "Backup driver ra file",
+      "subtitle": "Lưu trữ driver đang cài để phục hồi nhanh khi cài lại Windows hoặc đổi phần cứng",
+      "requireAdmin": "Yêu cầu quyền Administrator",
+      "requireAdminDesc": "Lệnh pnputil cần quyền admin. Nếu app chưa chạy elevated, hãy đóng và mở lại bằng Run as administrator.",
+      "targetDir": "Folder đích",
+      "open": "Mở",
+      "start": "Bắt đầu backup",
+      "report": "Kết quả backup",
+      "exported": "Driver đã export",
+      "size": "Tổng dung lượng",
+      "duration": "Thời gian",
+      "howTo": "Cách sử dụng",
+      "howToDesc": "Khi nào cần backup?",
+      "step1": "Trước khi cập nhật Windows lên version mới",
+      "step2": "Trước khi cài lại Windows / format máy",
+      "step3": "Sau khi mua phần cứng mới, cần driver gốc từ nhà sản xuất",
+      "step4": "Restore: chạy 'pnputil /add-driver <folder>\\*.inf /install' trong CMD admin"
+    },
+    "library": {
+      "profileTitle": "Máy hiện tại",
+      "profileDesc": "Driver sẽ được lưu theo hãng và dòng sản phẩm, dùng chung cho mọi máy cùng dòng",
+      "brand": "Hãng",
+      "series": "Dòng sản phẩm",
+      "model": "Model",
+      "target": "Thư mục đích",
+      "familyHint": "Họ sản phẩm gốc",
+      "backupTitle": "Backup vào thư viện",
+      "backupDesc": "Tự động chia nhóm theo hãng / dòng máy. Driver dùng chung (Intel, NVIDIA…) nằm trong Common.",
+      "libraryDir": "Thư viện driver",
+      "preview": "Xem trước cách phân loại",
+      "startBackup": "Backup theo hãng / dòng",
+      "reportTitle": "Kết quả backup",
+      "exported": "Driver đã lưu",
+      "groups": "Nhóm",
+      "libraryTitle": "Thư viện hiện có",
+      "libraryDesc": "Chọn nhóm đúng dòng máy để khôi phục driver",
+      "refresh": "Làm mới",
+      "search": "Tìm hãng hoặc dòng máy…",
+      "empty": "Chưa có thư viện driver nào. Chạy backup để tạo.",
+      "current": "Máy này",
+      "drivers": "driver",
+      "restore": "Khôi phục",
+      "howTo": "Cách dùng",
+      "howToDesc": "Backup 1 lần, dùng lại cho cả dòng máy",
+      "step1": "Backup trên 1 máy đại diện của dòng (vd Acer Nitro 5) → lưu vào ACER/Nitro 5",
+      "step2": "Driver chung cho mọi máy (Intel, NVIDIA, Realtek) tự vào Common/<lớp thiết bị>",
+      "step3": "Trên máy mới cùng dòng, mở tab này → nhóm của dòng đó được đánh dấu 'Máy này'",
+      "step4": "Bấm Khôi phục → driver được cài vào Windows (cần quyền Administrator)"
+    }
+  }
+}

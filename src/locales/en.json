@@ -1,0 +1,329 @@
+{
+  "app": {
+    "name": "PC Manager Pro",
+    "tagline": "Comprehensive PC management & optimization"
+  },
+  "nav": {
+    "home": "Home",
+    "system": "System Info",
+    "cpu": "CPU",
+    "ram": "RAM",
+    "mainboard": "Mainboard",
+    "disk": "Disk",
+    "gpu": "GPU",
+    "network": "Network",
+    "software": "Software",
+    "startup": "Startup",
+    "driver": "Driver",
+    "dashboard": "Dashboard",
+    "performance": "Performance",
+    "optimizer": "Optimize",
+    "cleaner": "Cleaner",
+    "booster": "Booster",
+    "repair": "Repair",
+    "security": "Security",
+    "tools": "Tools",
+    "windowsConfig": "Windows Setup",
+    "settings": "Settings"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Error",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "close": "Close",
+    "search": "Search",
+    "refresh": "Refresh",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "settings": {
+    "tab": {
+      "general": "General",
+      "startup": "Startup",
+      "notification": "Notifications",
+      "security": "Security",
+      "monitor": "Monitor",
+      "about": "About"
+    },
+    "subtitle": "Customize the look, startup, notifications and security of PC Manager Pro.",
+    "unsavedHint": "Unsaved changes",
+    "reset": "Restore defaults",
+    "save": "Save changes",
+    "saved": "Saved",
+    "confirmReset": "Restore all settings to defaults?",
+    "general": {
+      "appearance": "Appearance",
+      "theme": "Theme",
+      "themeDesc": "Only Dark is currently supported. Light/System coming in a future release.",
+      "language": "Language",
+      "languageDesc": "Applied immediately, no restart required.",
+      "fontSize": "Font size",
+      "fontSizeDesc": "px — applied app-wide."
+    },
+    "startup": {
+      "title": "Startup with Windows",
+      "subtitle": "Some options require an app restart to take effect.",
+      "autoLaunch": "Auto-launch on login",
+      "autoLaunchDesc": "PC Manager Pro will run in the background when Windows boots.",
+      "minimizeToTray": "Minimize to system tray",
+      "minimizeToTrayDesc": "Closing the main window hides the app to tray instead of quitting.",
+      "checkUpdate": "Auto-check for updates",
+      "checkUpdateDesc": "Check GitHub Releases once per day."
+    },
+    "notification": {
+      "title": "Notifications",
+      "subtitle": "Alerts for completed scans, updates, or detected issues.",
+      "enabled": "Enable system notifications",
+      "enabledDesc": "Show Windows toasts when events occur.",
+      "sound": "Play sound",
+      "soundDesc": "Requires the system notifications option above."
+    },
+    "security": {
+      "title": "Security",
+      "subtitle": "Restrict permissions when running the app.",
+      "requireAdmin": "Require admin privileges",
+      "requireAdminDesc": "Some actions (SFC, DISM, system file deletion) need admin. App will warn if missing.",
+      "pinLock": "Lock with PIN",
+      "pinLockDesc": "Require a 6-digit PIN to open the app. Coming in v0.2."
+    },
+    "elevation": {
+      "title": "Administrator privileges",
+      "subtitle": "Auto-elevate on launch so every system feature works fully.",
+      "runningAsAdmin": "Running as Administrator",
+      "runningAsUser": "Running as standard user",
+      "devMode": "Dev mode — auto-elevation temporarily disabled",
+      "autoElevate": "Auto-elevate on launch",
+      "autoElevateDesc": "When enabled, the app relaunches itself with Administrator rights and shows the UAC prompt.",
+      "restartNow": "Relaunch as Administrator",
+      "restartNowDesc": "Restart the app right now with Administrator rights (shows the UAC prompt).",
+      "restart": "Elevate"
+    },
+    "monitor": {
+      "title": "Realtime monitor",
+      "subtitle": "Update frequency for CPU/RAM/Net and history retention.",
+      "refreshInterval": "Refresh interval",
+      "refreshIntervalDesc": "1s is smoothest but uses more CPU; 5s saves battery.",
+      "historyRetention": "History retention",
+      "historyRetentionDesc": "After this duration, charts start overwriting old data."
+    },
+    "about": {
+      "title": "About",
+      "subtitle": "PC Manager Pro",
+      "description": "Comprehensive Windows management & optimization, fully local, no install required.",
+      "stack": "Stack:",
+      "viewOnGithub": "View on GitHub",
+      "copyDiagnostics": "Copy diagnostics",
+      "license": "MIT License."
+    },
+    "update": {
+      "title": "Updates",
+      "subtitle": "Automatic upgrades via GitHub Releases",
+      "check": "Check for updates",
+      "checking": "Checking…",
+      "upToDate": "You are on the latest version",
+      "available": "Version {{version}} is available",
+      "currentVersion": "Current version",
+      "latestVersion": "Latest version",
+      "releasedAt": "Released",
+      "releaseNotes": "Release notes",
+      "noNotes": "No release notes for this version.",
+      "download": "Download and install",
+      "downloading": "Downloading…",
+      "installing": "Installing…",
+      "finished": "Update complete. The app will restart automatically.",
+      "failed": "Update failed. Please try again later.",
+      "channel": "Update channel",
+      "channelGithub": "GitHub Releases",
+      "autoCheck": "Auto-check daily"
+    },
+    "errorBoundary": {
+      "reload": "Reload page",
+      "home": "Back to Dashboard",
+      "copy": "Copy details",
+      "copied": "Copied!"
+    }
+  },
+  "security": {
+    "tab": {
+      "scan": "Virus scan",
+      "threats": "Threats",
+      "settings": "Defender settings",
+      "exclusions": "Exclusions",
+      "firewall": "Firewall"
+    },
+    "status": {
+      "protected": "Protected",
+      "unavailable": "Unavailable",
+      "atRisk": "At risk",
+      "threats": "Threats detected"
+    },
+    "pill": {
+      "realtime": "Realtime",
+      "cloud": "Cloud",
+      "behavior": "Behavior"
+    },
+    "scan": {
+      "title": "Virus scan",
+      "quick": "Quick scan",
+      "quickDesc": "Common infection areas (1-5 min)",
+      "full": "Full scan",
+      "fullDesc": "All drives (a few hours)",
+      "custom": "Custom scan",
+      "customDesc": "Pick a specific folder/path",
+      "customPrompt": "Enter folder path to scan (e.g. C:\\Users):",
+      "lastResult": "Last scan result",
+      "type": "Scan type",
+      "completed": "Completed",
+      "failed": "Failed",
+      "running": "Running",
+      "duration": "Duration",
+      "stillRunning": "running...",
+      "noThreats": "No threats found",
+      "foundThreats": "Found {{count}} threats",
+      "signature": "Security signatures",
+      "signatureDesc": "Update signatures to detect the newest malware",
+      "updateNow": "Update now",
+      "lastUpdate": "Last update",
+      "quickAge": "Quick scan",
+      "fullAge": "Full scan",
+      "threats": "Threats"
+    },
+    "threats": {
+      "title": "Active threats",
+      "empty": "No active threats",
+      "count": "{{count}} threats",
+      "allClean": "Your PC is safe",
+      "allCleanDesc": "Defender found no active threats",
+      "quarantined": "Quarantined",
+      "quarantine": "Quarantine",
+      "restore": "Restore",
+      "remove": "Remove"
+    },
+    "settings": {
+      "protection": "Real-time protection",
+      "protectionDesc": "Core Defender features",
+      "realtime": "Realtime Protection",
+      "realtimeDesc": "Monitor running files/processes — when OFF, malware can run freely",
+      "behavior": "Behavior Monitoring",
+      "behaviorDesc": "Detect suspicious process behavior (e.g. ransomware)",
+      "scriptScan": "Script Scanning",
+      "scriptScanDesc": "Scan PowerShell/VBScript macros when executed",
+      "archiveScan": "Archive Scanning",
+      "archiveScanDesc": "Scan inside .zip/.rar/.7z archives",
+      "cloud": "Cloud Protection",
+      "cloudDesc": "Send metadata to Microsoft for faster analysis",
+      "cloudLevel": "Cloud protection level",
+      "cloudLevelDesc": "High = block on suspicion; Basic = warn first",
+      "applying": "Applying..."
+    },
+    "exclusions": {
+      "title": "Exclusion list",
+      "subtitle": "Files/processes in this list will NOT be scanned by Defender. Only add when certain.",
+      "type": "Type",
+      "value": "Value",
+      "add": "Add",
+      "empty": "No exclusions yet"
+    },
+    "firewall": {
+      "title": "Windows Firewall",
+      "subtitle": "Manage 3 profiles: Domain (corp), Private (home), Public (cafe)",
+      "on": "Enabled",
+      "off": "Disabled",
+      "turnOn": "Turn on",
+      "turnOff": "Turn off",
+      "note": "Recommendation",
+      "noteDesc": "Keep firewall ON for all 3 profiles. Turn off only temporarily for network debugging."
+    }
+  },
+  "driver": {
+    "tab": {
+      "overview": "Overview",
+      "list": "List",
+      "backup": "Backup",
+      "library": "Library"
+    },
+    "health": {
+      "good": "All stable",
+      "hasIssues": "Some drivers need attention",
+      "manyOld": "Many outdated drivers"
+    },
+    "header": {
+      "total": "Total",
+      "unsigned": "Unsigned",
+      "old": "Old > 2 years"
+    },
+    "overview": {
+      "issues": "Detected issues",
+      "distribution": "Distribution by class",
+      "distributionDesc": "Driver count per DeviceClass",
+      "newest": "Newest drivers",
+      "newestDesc": "Top 5 most recent driver dates"
+    },
+    "issue": {
+      "unsigned": "{{count}} unsigned driver(s)",
+      "old": "{{count}} driver(s) older than 2 years",
+      "update": "{{count}} driver(s) have updates",
+      "none": "No issues detected"
+    },
+    "list": {
+      "searchPlaceholder": "Search by name, class, provider…",
+      "allClasses": "All classes",
+      "unsignedOnly": "Unsigned only",
+      "empty": "No drivers match",
+      "showing": "Showing {{shown}}/{{total}}"
+    },
+    "backup": {
+      "title": "Backup drivers to file",
+      "subtitle": "Store installed drivers for quick restore when reinstalling Windows or changing hardware",
+      "requireAdmin": "Requires Administrator",
+      "requireAdminDesc": "pnputil requires admin. If the app is not elevated, close and reopen with Run as administrator.",
+      "targetDir": "Destination folder",
+      "open": "Open",
+      "start": "Start backup",
+      "report": "Backup result",
+      "exported": "Drivers exported",
+      "size": "Total size",
+      "duration": "Duration",
+      "howTo": "How to use",
+      "howToDesc": "When should you back up?",
+      "step1": "Before updating Windows to a new version",
+      "step2": "Before reinstalling Windows / formatting",
+      "step3": "After buying new hardware that needs OEM drivers",
+      "step4": "Restore: run 'pnputil /add-driver <folder>\\*.inf /install' in admin CMD"
+    },
+    "library": {
+      "profileTitle": "Current machine",
+      "profileDesc": "Drivers are stored by brand and product series, shared across every machine in the same series",
+      "brand": "Brand",
+      "series": "Product series",
+      "model": "Model",
+      "target": "Target folder",
+      "familyHint": "Original product family",
+      "backupTitle": "Back up to library",
+      "backupDesc": "Automatically grouped by brand / product series. Shared drivers (Intel, NVIDIA…) go to Common.",
+      "libraryDir": "Driver library",
+      "preview": "Preview grouping",
+      "startBackup": "Back up by brand / series",
+      "reportTitle": "Backup result",
+      "exported": "Drivers saved",
+      "groups": "Groups",
+      "libraryTitle": "Existing library",
+      "libraryDesc": "Pick the group matching your series to restore drivers",
+      "refresh": "Refresh",
+      "search": "Search brand or series…",
+      "empty": "No driver library yet. Run a backup to create one.",
+      "current": "This machine",
+      "drivers": "drivers",
+      "restore": "Restore",
+      "howTo": "How to use",
+      "howToDesc": "Back up once, reuse across the whole series",
+      "step1": "Back up on one representative machine of the series (e.g. Acer Nitro 5) → saved to ACER/Nitro 5",
+      "step2": "Drivers common to all machines (Intel, NVIDIA, Realtek) automatically go to Common/<device class>",
+      "step3": "On a new machine of the same series, open this tab → that group is marked 'This machine'",
+      "step4": "Click Restore → drivers are installed into Windows (requires Administrator)"
+    }
+  }
+}

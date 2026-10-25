@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "PC Manager Pro",
+  "version": "0.1.0",
+  "identifier": "com.pcmanager.pro",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "PC Manager Pro",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 1024,
+        "minHeight": 700,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": true,
+        "transparent": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["msi", "nsis"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "publisher": "PC Manager Pro Team",
+    "shortDescription": "PC Manager Pro - quản lý & tối ưu máy tính Windows",
+    "longDescription": "PC Manager Pro là ứng dụng desktop giúp người dùng Windows theo dõi thông tin hệ thống, dọn rác, tăng tốc, quét virus, cập nhật driver và nhiều tiện ích khác — tất cả trong một giao diện Việt Nam hiện đại.",
+    "category": "Utility",
+    "copyright": "Copyright © 2026 PC Manager Pro",
+    "homepage": "https://github.com/tranphihao2k3/tool-pc",
+    "createUpdaterArtifacts": true,
+    "windows": {
+      "wix": {
+        "language": ["vi-VN", "en-US"]
+      },
+      "nsis": {
+        "languages": ["Vietnamese", "English"],
+        "displayLanguageSelector": true,
+        "installerIcon": "icons/icon.ico",
+        "installMode": "perMachine"
+      },
+      "signCommand": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    }
+  },
+  "plugins": {
+    "store": null,
+    "os": null,
+    "dialog": null,
+    "fs": null,
+    "shell": {
+      "open": true
+    },
+    "process": null,
+    "updater": {
+      "endpoints": [
+        "https://github.com/tranphihao2k3/tool-pc/releases/latest/download/latest.json"
+      ],
+      "pubkey": "",
+      "windows": {
+        "installMode": "passive"
+      }
+    }
+  }
+}

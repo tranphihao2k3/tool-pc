@@ -1,0 +1,11 @@
+# Normalize line endings on checkout, commit as LF in repo
+* text=auto eol=lf
+
+# Windows-native binaries
+*.exe binary
+*.dll binary
+*.ico binary
+*.png binary
+*.icns binary
+*.msi binary
+*.traineddata binary

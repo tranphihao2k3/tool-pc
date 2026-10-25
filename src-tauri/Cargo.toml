@@ -1,0 +1,58 @@
+[package]
+name = "pc-manager-pro"
+version = "0.1.0"
+description = "PC Manager Pro - quản lý & tối ưu máy tính Windows"
+authors = ["you"]
+edition = "2021"
+rust-version = "1.77"
+
+# Binary name chính dùng cho tauri runtime
+[lib]
+name = "pc_manager_pro_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-store = "2"
+tauri-plugin-os = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+tauri-plugin-shell = "2"
+tauri-plugin-log = "2"
+tauri-plugin-process = "2"
+tauri-plugin-updater = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync", "time"] }
+thiserror = "1"
+log = "0.4"
+chrono = { version = "0.4", features = ["serde"] }
+once_cell = "1"
+walkdir = "2"
+md5 = "0.7"
+
+# Win-only backends sẽ enable sau khi cài MinGW xong
+[target.'cfg(windows)'.dependencies]
+# disk    = dung lượng ổ (GetDiskFreeSpaceExW)
+# network = byte counter NIC (GetIfTable2)
+# (nhiệt độ CPU đọc trực tiếp WMI MSAcpi_ThermalZoneTemperature — không cần feature component)
+sysinfo = { version = "0.31", features = ["disk", "network"] }
+wmi = { version = "0.14", features = ["chrono"] }
+winreg = "0.52"
+
+# Windows API cho tự nâng quyền Administrator (self-elevation).
+# Chỉ cần các phần: token elevation + ShellExecuteW (verb "runas").
+windows = { version = "0.62", features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_System_Threading",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+] }
+
+[features]
+# Tauri custom-protocol dùng khi build release
+custom-protocol = ["tauri/custom-protocol"]

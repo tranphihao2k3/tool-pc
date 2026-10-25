@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  html, body, #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-bg text-ink;
+    background-image:
+      radial-gradient(ellipse at top left, rgba(124, 92, 255, 0.10), transparent 50%),
+      radial-gradient(ellipse at bottom right, rgba(34, 211, 238, 0.08), transparent 50%);
+    background-attachment: fixed;
+  }
+  *::-webkit-scrollbar { width: 10px; height: 10px; }
+  *::-webkit-scrollbar-track { background: transparent; }
+  *::-webkit-scrollbar-thumb { @apply bg-surface-100 rounded-full; }
+  *::-webkit-scrollbar-thumb:hover { @apply bg-surface-200; }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-white/5 rounded-2xl shadow-card;
+  }
+  .card-glow {
+    @apply card bg-card-glow;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium transition-all
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn text-white shadow-glow;
+    background-image: linear-gradient(135deg, #7C5CFF 0%, #22D3EE 100%);
+    background-size: 200% 200%;
+    @apply hover:animate-gradient-x;
+  }
+  .btn-secondary {
+    @apply btn bg-surface-100 text-ink hover:bg-surface-200;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent text-ink-muted hover:bg-white/5;
+  }
+  .btn-danger {
+    @apply btn bg-danger/90 text-white hover:bg-danger;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+  .pill-brand { @apply pill bg-brand/15 text-brand-200; }
+  .pill-accent { @apply pill bg-accent/15 text-accent-100; }
+  .pill-success { @apply pill bg-success/15 text-success; }
+  .pill-warning { @apply pill bg-warning/15 text-warning; }
+  .pill-danger { @apply pill bg-danger/15 text-danger; }
+  .nav-item {
+    @apply flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium text-ink-muted
+           hover:bg-white/5 hover:text-ink transition-colors;
+  }
+  .nav-item-active {
+    @apply bg-brand-gradient-soft text-ink;
+    box-shadow: inset 0 0 0 1px rgba(124, 92, 255, 0.35);
+  }
+}
